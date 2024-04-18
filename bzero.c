@@ -6,23 +6,44 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 20:45:18 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/17 21:06:25 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/18 19:05:06 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <strings.h>
+#include <memory.h>
 #include <stdio.h>
 
-// void bzero(void *s, size_t n)
-// {
-
-// }
-int main(void)
+void	*ft_bzero(void *s, size_t n)
 {
-    char *str = "hello world";
-    size_t num = 0;
-    
-    printf("%s\n", str);
-    bzero(str, num);
-    printf("%s\n", str);
+	unsigned char	*str;
+	size_t			i;
+
+	str = (unsigned char *)s;
+	i = 0;
+	if (n == 0)
+	{
+		return (str);
+	}
+	else
+	{
+		while (i < n)
+		{
+			str[i] = '\0';
+			i++;
+		}
+	}
+	return (str);
 }
+// int main(void)
+// {
+//     char str[50] = "hello world";
+//     char ft_str[50] = "hello world";
+//     size_t num = 0;
+
+//     printf("before str: %s\n", str);
+//     printf("before ft_str: %s\n", ft_str);
+//     bzero(str, num);
+//     ft_bzero(ft_str, num);
+//     printf("after str: %s\n", str);
+//     printf("after ft_str: %s\n", ft_str);
+// }
