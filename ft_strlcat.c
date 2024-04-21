@@ -13,10 +13,10 @@
 #include <stdio.h>
 #include <string.h>
 
-size_t	ft_strlen(const char *src)
+size_t ft_strlen(const char *src)
 {
-	int		i;
-	size_t	count;
+	int i;
+	size_t count;
 
 	i = 0;
 	count = 0;
@@ -28,11 +28,11 @@ size_t	ft_strlen(const char *src)
 	return (count);
 }
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	ds_co;
-	size_t	sr_co;
-	size_t	i;
+	size_t ds_co;
+	size_t sr_co;
+	size_t i;
 
 	i = 0;
 	ds_co = 0;
@@ -64,12 +64,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 #include <stdio.h>
 #include <string.h>
 
-int	main(void)
+int main(void)
 {
-	char			dest[20] = "ABCDE";
-	char			src[] = "1234";
-	int				x;
-	unsigned int	result1;
+	char dest[20] = "abcde";
+	char src[] = "1234";
+	int x;
+	unsigned int result1;
 
 	x = 2;
 	result1 = strlcat(dest, src, x);
