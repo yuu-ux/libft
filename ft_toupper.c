@@ -6,12 +6,11 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:38:43 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 11:39:19 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/23 14:03:25 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

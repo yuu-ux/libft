@@ -6,12 +6,11 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 19:52:59 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/22 21:43:56 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/23 14:06:59 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

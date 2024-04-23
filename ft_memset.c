@@ -6,12 +6,11 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:41:04 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 11:41:08 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/23 14:06:53 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <memory.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {

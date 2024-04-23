@@ -6,12 +6,11 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:42:03 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 11:42:04 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/23 14:06:30 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <ctype.h>
-// #include <stdio.h>
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

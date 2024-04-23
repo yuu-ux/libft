@@ -6,12 +6,11 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 21:16:20 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/22 21:57:39 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/23 14:06:49 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

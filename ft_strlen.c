@@ -6,12 +6,11 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:40:23 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 11:40:38 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/23 14:06:58 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 unsigned long int	ft_strlen(const char *str)
 {

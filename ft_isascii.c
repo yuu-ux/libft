@@ -6,12 +6,11 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:41:58 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 11:41:59 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/23 14:06:25 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

@@ -6,12 +6,11 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:41:16 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 11:41:17 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/23 14:06:51 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t count)
 {

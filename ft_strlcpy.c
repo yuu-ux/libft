@@ -6,27 +6,11 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:40:45 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 11:40:48 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/23 16:16:56 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-
-size_t	ft_strlen(const char *src)
-{
-	int		i;
-	size_t	count;
-
-	i = 0;
-	count = 0;
-	while (src[i] != '\0')
-	{
-		count++;
-		i++;
-	}
-	return (count);
-}
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
