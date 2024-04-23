@@ -12,18 +12,44 @@
 
 #include "libft.h"
 
-int	atoi(const char *str)
+int ascii_to_int(char *str, int flag)
+{
+    unsigned long ret;
+
+    ret = 0;
+
+    while (*str >= '\0' && *str <= '9')
+    {
+        ret *= 10;
+        if (flag == 1 && ret > (unsigned long)LONG_MAX - (*str - '0')) // 整数であるかつretがMAX
+            return ((int)LONG_MAX);
+        if (flag == -1 && ret > (unsigned long)LONG_MAX + 1 - (*str - '0'))
+            return ((int)LONG_MIN);
+        ret += *str - '0';
+        str++;
+    }
+    return (ret)
+}
+
+int atoi(const char *str)
 {
     int i;
-    char *result;
-	
-    i = 0;
+    int flag;
+    int result;
 
-	while (str[i] != '\0') {
-		if (str[i] >= '1' && str[i] <= '9')
-        //数字であれば1時変数に入れていく。
-        //数字以外であればreturn 0する
+    i = 0;
+    flag = 1;
+
+    while (*str == ' ' || *str == '\t' || *str == '\n' || *str == '\v' || *str == '\f' || *str == '\r')
+    {
+        str++;
+        if (*str == '-')
+            flag = -1;
+        str++;
     }
+
+    result = ascii_to_int(str, flag);
+    return ((int)(flag * result))
 }
 
 int main(void)
