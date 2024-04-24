@@ -12,37 +12,30 @@
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void ft_bzero(void *s, size_t n)
 {
-	unsigned char	*str;
-	size_t			i;
+	unsigned char *str;
+	size_t i;
 
 	str = (unsigned char *)s;
 	i = 0;
-	if (n == 0)
+	while (i < n)
 	{
-		return (str);
+		str[i] = '\0';
+		i++;
 	}
-	else
-	{
-		while (i < n)
-		{
-			str[i] = '\0';
-			i++;
-		}
-	}
-	return (str);
 }
+
 // int main(void)
 // {
-//     char str[50] = "hello world";
-//     char ft_str[50] = "hello world";
-//     size_t num = 0;
+// 	char str[50] = "hello world";
+// 	char ft_str[50] = "hello world";
+// 	size_t num = 1;
 
-//     printf("before str: %s\n", str);
-//     printf("before ft_str: %s\n", ft_str);
-//     bzero(str, num);
-//     ft_bzero(ft_str, num);
-//     printf("after str: %s\n", str);
-//     printf("after ft_str: %s\n", ft_str);
+// 	printf("before str: %s\n", str);
+// 	printf("before ft_str: %s\n", ft_str);
+// 	bzero(str, num);
+// 	ft_bzero(ft_str, num);
+// 	printf("after str: %s\n", str);
+// 	printf("after ft_str: %s\n", ft_str);
 // }

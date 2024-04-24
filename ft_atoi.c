@@ -12,49 +12,52 @@
 
 #include "libft.h"
 
-int ascii_to_int(char *str, int flag)
+int ascii_to_int(const char *str, int flag)
 {
-    unsigned long ret;
+    unsigned long i;
+    int result :
 
-    ret = 0;
+        i = 0;
 
-    while (*str >= '\0' && *str <= '9')
+    while (*str >= '0' && *str <= '9')
     {
-        ret *= 10;
-        if (flag == 1 && ret > (unsigned long)LONG_MAX - (*str - '0')) // 整数であるかつretがMAX
-            return ((int)LONG_MAX);
-        if (flag == -1 && ret > (unsigned long)LONG_MAX + 1 - (*str - '0'))
-            return ((int)LONG_MIN);
-        ret += *str - '0';
-        str++;
+        result = i * 10 + str[i];
+        i++;
     }
-    return (ret)
+    // while (*str >= '\0' && *str <= '9')
+    // {
+    //     i *= 10;
+    //     if (flag == 1 && i > (unsigned long)LONG_MAX - (*str - '0'))
+    //         return((int)LONG_MAX);
+    //     if (flag == -1 && i > (unsigned long)LONG_MAX + 1 - (*str - '0'))
+    //         return((int)LONG_MIN);
+    //     i += *str - '0';
+    //     str++;
+    // }
+    // return (i);
 }
 
-int atoi(const char *str)
+int ft_atoi(const char *str)
 {
-    int i;
     int flag;
     int result;
 
-    i = 0;
     flag = 1;
 
     while (*str == ' ' || *str == '\t' || *str == '\n' || *str == '\v' || *str == '\f' || *str == '\r')
-    {
         str++;
+    if (*str == '-' || *str == '+')
         if (*str == '-')
             flag = -1;
-        str++;
-    }
-
+    str++;
     result = ascii_to_int(str, flag);
-    return ((int)(flag * result))
+    return ((int)(flag * result));
 }
 
 int main(void)
 {
-    char *str = "a124";
+    char *str = "-21474836489";
     printf("%d\n", atoi(str));
+    printf("%d\n", ft_atoi(str));
     return 0;
 }
