@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:38:21 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/24 20:47:34 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/24 21:36:36 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int	ascii_to_int(const char *str, int flag)
 	result = 0;
 	while (*str >= '0' && *str <= '9')
 	{
-		result = (result * 10) + (int)(*str - '0');
-		if ((result > (unsigned int)LONG_MAX / 10) && (result % 10 > 7))
+		result = (result * 10) + (*str - '0');
+		if ((result >= (unsigned int)LONG_MAX / 10) && (result % 10 > 7))
 		{
 			if (flag == 1)
 			{
@@ -55,7 +55,7 @@ int	ft_atoi(const char *str)
 
 // int main(void)
 // {
-//     char *str = NULL;
+//     char *str = "9223372036854775807";
 //     printf("%d\n", atoi(str));
 //     printf("%d\n", ft_atoi(str));
 //     return (0);
