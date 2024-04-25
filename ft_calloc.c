@@ -6,11 +6,13 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 20:54:41 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/24 21:37:44 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/25 19:37:44 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	*calloc(size_t count, size_t size);
 int main(void)
 {
 	
