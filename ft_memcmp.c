@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 21:58:06 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 14:06:50 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/27 00:28:25 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	char *str1;
-	char *str2;
+	unsigned char *str1;
+	unsigned char *str2;
 	size_t i;
 
 	i = 0;
-	str1 = (char *)s1;
-	str2 = (char *)s2;
-	while ((str1[i] != '\0' || str2[i] != '\0') && i < n)
+	str1 = (unsigned char *)s1;
+	str2 = (unsigned char *)s2;
+	while ((str1[i] != '\0' || str2[i] != '\0') || i < n)
 	{
 		if (str1[i] != str2[i])
 			return (str1[i] - str2[i]);
@@ -32,10 +32,21 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 
 // int main(void)
 // {
-//     char *s1 = "";
-//     char *s2 = "";
-//     size_t num = 2;
-// 	printf("%d\n", memcmp(s1, s2, num));
-// 	printf("%d\n", ft_memcmp(s1, s2, num));
+// 	int	len = 30;
+// 	char *str = calloc(30, sizeof(char));
+// 	char *cmp = calloc(30, sizeof(char));
+
+// 	for (int i = 0; i <= len; i++)
+// 		{
+// 			cmp = strndup(str, i);
+// 			printf("%d %d\n",ft_memcmp(str, cmp, i), memcmp(str, cmp, i));
+// 			printf("%d %d\n",ft_memcmp(str, cmp, len), memcmp(str, cmp, len));
+// 			free(cmp);
+// 		}
 //     return (0);
 // }
+
+
+//callocで30個の0を入れている
+//cmpに関してはstrndupで30個の０を保持しているstrをi文字メモリを新しく割り当てる
+
