@@ -6,14 +6,14 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:41:31 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 14:06:51 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/26 20:50:44 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #define BUF_SIZE 16
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t			i;
 	unsigned char	*str;

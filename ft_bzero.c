@@ -6,16 +6,16 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:42:27 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 14:08:51 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/26 19:57:09 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned char *str;
-	size_t i;
+	unsigned char	*str;
+	size_t			i;
 
 	str = (unsigned char *)s;
 	i = 0;

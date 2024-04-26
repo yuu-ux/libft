@@ -6,29 +6,58 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 20:54:41 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/25 22:03:08 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/26 21:16:11 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-    //例外処理と0埋めだけ
-    void ft_bzero(void *s, size_t n)
+	void *buffer;
+    
+    if (count && (size > SIZE_MAX / count))
+    {
+        return (NULL);
+    }
+	
+    buffer = (void *)malloc(count * size);
+    if (buffer == NULL)
+    {
+        free(buffer);
+        return (NULL);
+    }
+    ft_bzero(buffer, count * size);
+    return (buffer);
 }
-int main(void)
-{
-	// char *str = "abcde";
-    int dest;
 
-    size_t count = 5;
-    size_t size = 5;
-    dest = (int)calloc(count, size);
-    dest = 1;
-    printf("%d\n", dest);
-    return 0;
-}
+// #define ARRAY_SIZE 10
+
+// int main() {
+//     int *array = (int *)ft_calloc(ARRAY_SIZE, sizeof(int));
+//     if (array == NULL) {
+//         printf("メモリ割り当てに失敗しました。\n");
+//         return 1;
+//     }
+
+//     // 配列の要素を初期化
+//     for (int i = 0; i < ARRAY_SIZE; i++) {
+//         array[i] = i + 1;
+//     }
+
+//     // 配列の要素の合計を計算
+//     int sum = 0;
+//     for (int i = 0; i < ARRAY_SIZE; i++) {
+//         sum += array[i];
+//     }
+
+//     printf("配列の要素の合計: %d\n", sum);
+
+//     // 割り当てられたメモリを解放
+//     free(array);
+
+//     return 0;
+// }
 
 
 // 好きな時に失敗する malloc()
