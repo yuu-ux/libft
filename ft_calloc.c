@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 20:54:41 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/26 21:16:11 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/26 21:42:08 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,21 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void *buffer;
-    
-    if (count && (size > SIZE_MAX / count))
-    {
-        return (NULL);
-    }
-	
-    buffer = (void *)malloc(count * size);
-    if (buffer == NULL)
-    {
-        free(buffer);
-        return (NULL);
-    }
-    ft_bzero(buffer, count * size);
-    return (buffer);
+	void	*buffer;
+
+	if (count && (size > SIZE_MAX / count))
+	{
+		return (NULL);
+	}
+	buffer = (void *)malloc(count * size);
+	if (buffer == NULL)
+	{
+		free(buffer);
+		errno = ENOMEM;
+		return (NULL);
+	}
+	ft_bzero(buffer, count * size);
+	return (buffer);
 }
 
 // #define ARRAY_SIZE 10
@@ -37,7 +37,7 @@ void	*ft_calloc(size_t count, size_t size)
 //     int *array = (int *)ft_calloc(ARRAY_SIZE, sizeof(int));
 //     if (array == NULL) {
 //         printf("メモリ割り当てに失敗しました。\n");
-//         return 1;
+//         return (1);
 //     }
 
 //     // 配列の要素を初期化
@@ -56,9 +56,8 @@ void	*ft_calloc(size_t count, size_t size)
 //     // 割り当てられたメモリを解放
 //     free(array);
 
-//     return 0;
+//     return (0);
 // }
-
 
 // 好きな時に失敗する malloc()
 // #if 1
@@ -67,8 +66,8 @@ void	*ft_calloc(size_t count, size_t size)
 //     static int i = 0;
 
 //     if (i++ < 42)
-//         return calloc(n, 1);
+//         return (calloc(n, 1));
 //     errno = ENOMEM;
-//     return (NULL);                                                         
+//     return (NULL);
 // }
 // #endif
