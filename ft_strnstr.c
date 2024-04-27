@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 22:47:28 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 14:07:00 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/27 17:44:05 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		if (haystack[i] == needle[0])
 		{
 			j = 0;
-			while (needle[j] != '\0'
-				&& haystack[i + j] == needle[j] && (i + j) < len)
+			while ((needle[j] != '\0')
+				&& (haystack[i + j] == needle[j]) && (i + j < len))
 			{
 				j++;
-				if (needle[i] == '\0')
+				if (needle[j] == '\0')
 				{
 					return ((char *)&haystack[i]);
 				}
@@ -42,14 +42,18 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 // int	main(void)
 // {
-// 	char	*s1;
-// 	char	*s2;
-// 	size_t	n;
+// 	char *str = "libft-test-tokyo"; //16文字
+// 	int	len = strlen(str); //len = 16j
 
-// 	s1 = "a";
-// 	s2 = "bc";
-// 	n = 15;
-// 	printf("%s\n", strnstr(s1, s2, n));
-// 	printf("%s\n", ft_strnstr(s1, s2, n));
+// 	for (int i = 0; i < len; i++)
+// 	{
+// 		printf("%d回目のループ%s %s\n",i, ft_strnstr(str, "", i), strnstr(str, "", i));
+// 		printf("%d回目のループ%s %s\n",i, ft_strnstr(str, "libft-test-tokyo", i), strnstr(str, "libft-test-tokyo", i));
+// 		printf("%d回目のループ%s %s\n",i, ft_strnstr(str, "libft", i), strnstr(str, "libft", i));
+// 		printf("%d回目のループ%s %s\n",i, ft_strnstr(str, "test", i), strnstr(str, "test", i));
+// 		printf("%d回目のループ%s %s\n",i, ft_strnstr(str, "tokyo", i), strnstr(str, "tokyo", i));
+// 		printf("%d回目のループ%s %s\n",i, ft_strnstr(str, "libft~", i), strnstr(str, "libft~", i));
+// 		printf("%d回目のループ%s %s\n",i, ft_strnstr(str, "z", i), strnstr(str, "z", i));
+// 	}
 // 	return (0);
 // }
