@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 13:48:46 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/27 18:50:17 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/27 23:06:37 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,8 @@ char				*ft_strdup(const char *s1);
 
 // part2
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-// char				*ft_strjoin(char const *s1, char const *s2);
-// char				*ft_strtrim(char const *s1, char const *set);
+char *ft_strjoin(char const *s1, char const *s2);
+char *ft_strtrim(char const *s1, char const *set);
 // char				**ft_split(char const *s, char c);
 // char				*ft_itoa(int n);
 // char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
