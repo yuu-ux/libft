@@ -6,12 +6,13 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 13:48:46 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/26 21:57:07 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/27 18:50:17 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <errno.h>
 # include <limits.h>
 # include <stddef.h>
 # include <stdio.h>
@@ -19,7 +20,6 @@
 # include <string.h>
 # include <strings.h>
 # include <unistd.h>
-#include <errno.h>
 
 typedef struct s_list
 {
@@ -51,11 +51,10 @@ char				*ft_strnstr(const char *str, const char *to_find,
 						size_t len);
 int					ft_atoi(const char *str);
 void				*ft_calloc(size_t count, size_t size);
-char 				*ft_strdup(const char *s1);
-
+char				*ft_strdup(const char *s1);
 
 // part2
-// char				*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 // char				*ft_strjoin(char const *s1, char const *s2);
 // char				*ft_strtrim(char const *s1, char const *set);
 // char				**ft_split(char const *s, char c);
