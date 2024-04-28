@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:42:27 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/26 19:57:09 by yehara           ###   ########.fr       */
+/*   Updated: 2024/04/28 16:45:35 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,13 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-// int main(void)
+// int	main(void)
 // {
-// 	char str[50] = "hello world";
-// 	char ft_str[50] = "hello world";
-// 	size_t num = 1;
+// 	char	str[50] = "hello world";
+// 	char	ft_str[50] = "hello world";
+// 	size_t	num;
 
+// 	num = 1;
 // 	printf("before str: %s\n", str);
 // 	printf("before ft_str: %s\n", ft_str);
 // 	bzero(str, num);
