@@ -6,21 +6,21 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 20:49:39 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/30 22:09:08 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/01 20:24:23 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	to_upper(unsigned int index, char c)
-{
-	(void)index;
-	if (c >= 'a' && c <= 'z')
-	{
-		return (c - 32);
-	}
-	return (c);
-}
+// char	to_upper(unsigned int index, char c)
+// {
+// 	(void)index;
+// 	if (c >= 'a' && c <= 'z')
+// 	{
+// 		return (c - 32);
+// 	}
+// 	return (c);
+// }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

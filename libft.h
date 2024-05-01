@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 13:48:46 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/30 20:15:39 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/01 21:45:51 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,10 @@
 #include <string.h>
 #include <strings.h>
 #include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+
 
 typedef struct s_list
 {
@@ -60,10 +64,10 @@ char *ft_strtrim(char const *s1, char const *set);
 char **ft_split(char const *s, char c);
 char *ft_itoa(int n);
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
-// void				ft_striteri(char *s, void (*f)(unsigned int, char *));
-// void				ft_putchar_fd(char c, int fd);
-// void				ft_putstr_fd(char *s, int fd);
-// void				ft_putendl_fd(char *s, int fd);
+void ft_striteri(char *s, void (*f)(unsigned int,char*));
+void ft_putchar_fd(char c, int fd);
+void ft_putstr_fd(char *s, int fd);
+void				ft_putendl_fd(char *s, int fd);
 // void				ft_putnbr_fd(int n, int fd);
 // void				ft_putchar_fd(char c, int fd);
 // void				ft_putstr_fd(char *s, int fd);
