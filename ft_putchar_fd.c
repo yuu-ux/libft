@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 20:23:57 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/01 22:03:42 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/01 22:07:19 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if (!s)
-		return ;
 	write(fd, &c, 1);
 }
 
