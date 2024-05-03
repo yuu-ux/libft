@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 13:48:46 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/01 21:45:51 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/03 14:16:33 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,11 +68,7 @@ void ft_striteri(char *s, void (*f)(unsigned int,char*));
 void ft_putchar_fd(char c, int fd);
 void ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
-// void				ft_putnbr_fd(int n, int fd);
-// void				ft_putchar_fd(char c, int fd);
-// void				ft_putstr_fd(char *s, int fd);
-// void				ft_putendl_fd(char *s, int fd);
-// void				ft_putnbr_fd(int n, int fd);
+void ft_putnbr_fd(int n, int fd);
 
 // bonus
 // t_list				*ft_lstnew(void *content);
