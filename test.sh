@@ -8,10 +8,21 @@
 
 
 cd libft_test
+make
+cd ..
+make fclean
+
+cd libft_test
 make bonus
+cd ..
+make fclean
 
-# cd libft_test
-# make norm
+cd unit_test
+make f
+cd ..
+make fclean
 
+cd libftTester
+make a
 cd ..
 make fclean

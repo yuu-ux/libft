@@ -1,32 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/03 20:00:24 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/03 21:40:22 by yehara           ###   ########.fr       */
+/*   Created: 2024/05/04 00:08:00 by yehara            #+#    #+#             */
+/*   Updated: 2024/05/04 04:10:06 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+// void	del_content(void *content)
+// {
+// 	free(content);
+// }
+
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	new->next = *lst;
-	*lst = new;
+	if (lst == NULL)
+		return ;
+	del(lst->content);
+	free(lst);
 }
 
-// int main(void)
+// int	main(void)
 // {
-//     t_list *lst;
-//     t_list *new_node;
-	
-//     lst = ft_lstnew("world");
-//     new_node = ft_lstnew("hello");
-//     printf("Before: lst = %p new-node->next：%p\n", lst, new_node->next);
-//     ft_lstadd_front(&lst, new_node);
-// 	printf("After: lst = %p, new->next = %p\n", lst, new_node->next);
-// 	return 0;
+// 	t_list *lst;
+//     lst = ft_lstnew("content");
+//     printf("%p\n", lst);
+// 	ft_lstdelone(lst, del_content);
+//     return 0;
 // }

@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/03 20:00:24 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/03 21:40:22 by yehara           ###   ########.fr       */
+/*   Created: 2024/05/04 04:14:29 by yehara            #+#    #+#             */
+/*   Updated: 2024/05/04 04:35:05 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	new->next = *lst;
-	*lst = new;
-}
+	t_list *new_list;
+	t_list *new_list_tail;
+	t_list *current;
 
-// int main(void)
-// {
-//     t_list *lst;
-//     t_list *new_node;
+    current = lst;
 	
-//     lst = ft_lstnew("world");
-//     new_node = ft_lstnew("hello");
-//     printf("Before: lst = %p new-node->next：%p\n", lst, new_node->next);
-//     ft_lstadd_front(&lst, new_node);
-// 	printf("After: lst = %p, new->next = %p\n", lst, new_node->next);
-// 	return 0;
-// }
+
+}
+int main(void)
+{
+    
+}
