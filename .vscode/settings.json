@@ -4,7 +4,8 @@
         "string.h": "c",
         "libft.h": "c",
         "types.h": "c",
-        "stat.h": "c"
+        "stat.h": "c",
+        "__stddef_max_align_t.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

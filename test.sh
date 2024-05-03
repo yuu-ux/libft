@@ -8,7 +8,10 @@
 
 
 cd libft_test
-make
+make bonus
+
+# cd libft_test
+# make norm
 
 cd ..
 make fclean
