@@ -6,13 +6,13 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 03:43:15 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/04 04:08:55 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/04 21:29:21 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// void str_to_bigstr(void *content)
+// void *str_to_bigstr(void *content)
 // {
 //     char *str = (char *)content;
 //     while (*str)
@@ -21,6 +21,7 @@
 //             *str -= 32;
 //         str++;
 //     }
+//     return (str);
 // }
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))

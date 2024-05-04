@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 21:16:20 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/27 00:01:33 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/04 21:50:19 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,13 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*str;
-	unsigned char	search;
 	size_t			i;
 
 	str = (unsigned char *)s;
-	search = (unsigned char)c;
 	i = 0;
-	while (str[i] != '\0' || i < n)
+	while (i < n)
 	{
-		if (str[i] == search)
+		if (str[i] == (unsigned char)c)
 			return (&(str[i]));
 		i++;
 	}
@@ -32,11 +30,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 // int main(void)
 // {
-//     char *str = "s";
-//     int ch = '\0';
+//     long long num = INT_MAX;
+//     int ch = 8;
 //     size_t n = 30;
-// 	printf("%s\n", memchr(str, ch, n));
-// 	printf("%s\n", ft_memchr(str, ch, n));
+// 	printf("%s\n", memchr(&num, ch, n));
+// 	printf("%s\n", ft_memchr(&num, ch, n));
 //     return (0);
 // }
 
