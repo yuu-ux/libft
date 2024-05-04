@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 20:49:39 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/01 20:24:23 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/05 00:40:31 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		buf[i] = f(i, s[i]);
 		i++;
 	}
-	buf[i + 1] = '\0';
+	buf[i] = '\0';
 	return (buf);
 }
 

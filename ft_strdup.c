@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 21:18:53 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/26 22:15:52 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/05 00:12:40 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,15 @@ char	*ft_strdup(const char *s1)
 
 	i = 0;
 	len = ft_strlen(s1);
-	buf = (char *)malloc(len * sizeof(char));
+	buf = (char *)malloc((len + 1) * sizeof(char));
 	if (buf == NULL)
-	{
-		free((void *)buf);
 		return (NULL);
-	}
 	while (s1[i] != '\0')
 	{
 		buf[i] = s1[i];
 		i++;
 	}
+	buf[i] = '\0';
 	return (buf);
 }
 // int main(void)

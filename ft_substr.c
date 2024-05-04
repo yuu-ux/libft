@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 17:52:31 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/27 22:27:55 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/05 01:04:32 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*buf;
 
 	i = 0;
-	if (!s)
+	if (s == NULL)
 		return (0);
 	slen = ft_strlen(s);
 	if (slen < len)
@@ -33,7 +33,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	while ((i < start) && (s[i] != '\0'))
 		i++;
-	buf = (char *)malloc(flen * sizeof(char));
+	buf = (char *)malloc((flen + 1) * sizeof(char));
 	if (buf == NULL)
 		return (NULL);
 	ft_strlcpy(buf, s + i, flen + 1);
@@ -42,7 +42,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // int	main(void)
 // {
 // char *s = "libft-test-tokyo";
-// /* 1 */ printf("1：%s\n", ft_substr(s, 0, 100));
+// /* 1 */ printf("1：%s\n", ft_substr(s, 4, 0));
 // /* 2 */ printf("2：%s\n", ft_substr(s + 5, 5, 100));
 // /* 3 */ printf("3：%s\n", ft_substr(s + 10, 10, 100));
 // /* 4 */ printf("4：%s\n", ft_substr(s + 15, 15, 100));

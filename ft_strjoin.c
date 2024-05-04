@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 22:28:58 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/04 02:58:29 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/05 01:07:00 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	lens1 = ft_strlen(s1);
 	lens2 = ft_strlen(s2);
 	total_len = lens1 + lens2;
-	buf = (char *)malloc(total_len * sizeof(char));
+	buf = (char *)malloc((total_len + 1) * sizeof(char));
 	if (buf == NULL)
 		return (NULL);
 	ft_strlcpy(buf, s1, lens1 + 1);

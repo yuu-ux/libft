@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 19:52:59 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/26 23:54:07 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/04 23:49:36 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (s1 == NULL)
+	if (s1 == NULL && s2 == NULL)
 		return (0);
 	while ((s1[i] != '\0' || s2[i] != '\0') && i < n)
 	{

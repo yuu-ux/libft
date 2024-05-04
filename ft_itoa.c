@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:41:41 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/30 20:11:48 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/05 00:39:43 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,8 @@ static char	*zero_processing(void)
 	char	*result;
 
 	result = (char *)malloc((1 + 1) * sizeof(char));
+	if (result == NULL)
+		return (NULL);
 	result[0] = (char)(0 + '0');
 	result[1] = '\0';
 	return (result);
@@ -89,12 +91,16 @@ char	*ft_itoa(int n)
 	if (n == 0 || n == +0 || n == -0)
 	{
 		result = zero_processing();
+		if (result == NULL)
+			return (NULL);
 		return (result);
 	}
 	if (n < 0)
 		flag = 0;
 	digits_counts = digits_count(n);
 	result = buf_secure(digits_counts, flag);
+	if (result == NULL)
+		return (NULL);
 	result = int_to_str(result, digits_counts, flag, n);
 	return (result);
 }

@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 19:50:30 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/28 19:52:47 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/05 00:07:51 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,14 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // int main(void)
 // {
 // 	// char dest[20] = "abcde";
-// 	char src1[] = "abcdefgh";
-// 	char src2[] = "abcdefgh";
-// 	size_t result1;
-// 	size_t result2;
+// 	// char src1[] = NULL;
+// 	char src2[] ="abc";
 
-// 	result1 = strlcat(NULL, src1, 0);
-// 	result2 = ft_strlcat(NULL, src2, 0);
+// 	size_t result1;
+// 	result1 = strlcat(src2, NULL, 0);
 // 	printf("%lu\n", result1);
+// 	size_t result2;
+// 	result2 = ft_strlcat(src2, NULL, 0);
 // 	printf("%lu\n", result2);
 // 	return (0);
 // }

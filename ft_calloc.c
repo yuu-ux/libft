@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 20:54:41 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/26 21:42:08 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/05 00:47:51 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,10 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*buffer;
 
 	if (count && (size > SIZE_MAX / count))
-	{
 		return (NULL);
-	}
 	buffer = (void *)malloc(count * size);
 	if (buffer == NULL)
-	{
-		free(buffer);
-		errno = ENOMEM;
 		return (NULL);
-	}
 	ft_bzero(buffer, count * size);
 	return (buffer);
 }

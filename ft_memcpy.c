@@ -6,12 +6,13 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:41:31 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/26 20:50:44 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/04 23:48:09 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#define BUF_SIZE 16
+
+// #define BUF_SIZE 16
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
@@ -19,6 +20,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char	*str;
 	unsigned char	*s;
 
+	if (dst == NULL && src == NULL)
+		return (NULL);
 	i = 0;
 	str = (unsigned char *)dst;
 	s = (unsigned char *)src;

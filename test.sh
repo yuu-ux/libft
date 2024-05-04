@@ -17,10 +17,10 @@
 # cd ..
 # make fclean
 
-cd unit_test
-make f
-cd ..
-make fclean
+# cd unit_test
+# make f
+# cd ..
+# make fclean
 
 cd libftTester
 make a
