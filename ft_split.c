@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 19:56:49 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 01:10:39 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/05 17:30:29 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,9 +58,9 @@ static char	**split_string(char **buf, char const *s, char c)
 	j = 0;
 	while (*s)
 	{
-		while (*s == c && *(s + 1) != '\0')
+		while (*s == c)
 			s++;
-		if (*(s + 1) == '\0')
+		if (*(s) == '\0')
 			break ;
 		word_length = word_len(s, c);
 		buf[i] = (char *)malloc((word_length + 1) * sizeof(char));
@@ -99,7 +99,7 @@ char	**ft_split(char const *s, char c)
 // int i;
 
 // i = 0;
-// str = "1234,,,";
+// str = "a,b,c";
 // delimiter = ',';
 
 // result = ft_split(str, delimiter);
