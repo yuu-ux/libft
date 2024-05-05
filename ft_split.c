@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 19:56:49 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 17:30:29 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/05 20:13:21 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,19 @@ static size_t	word_len(char const *s, char c)
 	return (len);
 }
 
+static void	*allocate_buf(char **buf, int len, int i)
+{
+	buf[i] = (char *)malloc((len + 1) * sizeof(char));
+	if (buf == NULL)
+	{
+		i--;
+		while (0 <= i)
+			free(buf[i--]);
+		return (NULL);
+	}
+	return (buf[i]);
+}
+
 static char	**split_string(char **buf, char const *s, char c)
 {
 	int	word_length;
@@ -63,7 +76,8 @@ static char	**split_string(char **buf, char const *s, char c)
 		if (*(s) == '\0')
 			break ;
 		word_length = word_len(s, c);
-		buf[i] = (char *)malloc((word_length + 1) * sizeof(char));
+		if (allocate_buf(buf, word_length, i) == NULL)
+			return (NULL);
 		while (j < word_length)
 		{
 			buf[i][j++] = *s++;
@@ -89,6 +103,11 @@ char	**ft_split(char const *s, char c)
 	if (buf == NULL)
 		return (NULL);
 	buf = split_string(buf, s, c);
+	if (buf == NULL)
+	{
+		free(buf);
+		return (NULL);
+	}
 	return (buf);
 }
 // int	main(void)

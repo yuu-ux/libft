@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 00:08:00 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/04 04:10:06 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/05 19:28:42 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (lst == NULL)
+	if (lst == NULL || del == NULL)
 		return ;
 	del(lst->content);
 	free(lst);

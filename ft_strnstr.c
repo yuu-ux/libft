@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 22:47:28 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 00:06:55 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/05 19:33:37 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	j;
 
 	i = 0;
-	if (haystack == NULL || needle[0] == '\0')
+	if (needle[0] == '\0')
 		return ((char *)haystack);
+	if (len == 0 && haystack == NULL)
+		return (NULL);
 	while (haystack[i] != '\0' && i < len)
 	{
 		if (haystack[i] == needle[0])
@@ -30,9 +32,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 			{
 				j++;
 				if (needle[j] == '\0')
-				{
 					return ((char *)&haystack[i]);
-				}
 			}
 		}
 		i++;
@@ -46,12 +46,12 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 //    int len = strlen(str); //len = 16
 //    for (int i = 0; i < len; i++)
 //    {
-//        printf("%s %s\n", ft_strnstr(str, "libft", i), 
-//strnstr(str, "libft", i));
-//        printf("%s %s\n", ft_strnstr(str, "test", i), 
-//strnstr(str, "test", i));
-//        printf("%s %s\n", ft_strnstr(str, "tokyo", i), 
-//strnstr(str, "tokyo", i));
+//        printf("%s %s\n", ft_strnstr(str, "libft", i),
+// strnstr(str, "libft", i));
+//        printf("%s %s\n", ft_strnstr(str, "test", i),
+// strnstr(str, "test", i));
+//        printf("%s %s\n", ft_strnstr(str, "tokyo", i),
+// strnstr(str, "tokyo", i));
 //        printf("%s %s\n", ft_strnstr(str, "z", i), strnstr(str, "z", i));
 //    }
 //    return (0);

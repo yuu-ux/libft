@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 19:50:30 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 00:07:51 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/05 19:29:51 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	i = 0;
 	sr_co = ft_strlen(src);
-	if (dst == NULL || src == NULL)
+	if (src == NULL || size == 0)
 		return (sr_co);
 	ds_co = ft_strlen(dst);
 	if (size <= ds_co)
