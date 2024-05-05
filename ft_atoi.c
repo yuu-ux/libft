@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:38:21 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 01:38:00 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/06 00:52:43 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,15 @@ int	ascii_to_int(const char *str, int flag)
 	i = 0;
 	while (*str >= '0' && *str <= '9')
 	{
-		result *= 10;
-		if (((result >= LONG_MAX / 10) && ((*str - '0') > 7)) || (++i == 20))
+		if ((result > LONG_MAX / 10)
+			|| ((result == LONG_MAX / 10) && ((*str - '0') > 7)))
 		{
 			if (flag == 1)
 				return ((int)LONG_MAX);
 			else
 				return ((int)LONG_MIN);
 		}
+		result *= 10;
 		result += (*str - '0');
 		str++;
 	}
@@ -49,8 +50,6 @@ int	ft_atoi(const char *str)
 		if (*str == '-')
 			flag = -1;
 		str++;
-		while (*str == '0')
-			str++;
 	}
 	result = ascii_to_int(str, flag);
 	return (result);
@@ -58,7 +57,7 @@ int	ft_atoi(const char *str)
 
 // int	main(void)
 // {
-// 	char *str = "0 47";
+// 	char *str = "0 48";
 // 	printf("%d\n", atoi(str));
 // 	printf("%d\n", ft_atoi(str));
 // 	return (0);
