@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:38:21 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/06 00:52:43 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/06 00:55:32 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,8 @@
 int	ascii_to_int(const char *str, int flag)
 {
 	unsigned long	result;
-	int				i;
 
 	result = 0;
-	i = 0;
 	while (*str >= '0' && *str <= '9')
 	{
 		if ((result > LONG_MAX / 10)
