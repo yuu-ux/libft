@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:38:21 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/06 00:55:32 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/06 01:15:14 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int	ft_atoi(const char *str)
 
 // int	main(void)
 // {
-// 	char *str = "0 48";
+// 	char *str = "-9223372036854775807";
 // 	printf("%d\n", atoi(str));
 // 	printf("%d\n", ft_atoi(str));
 // 	return (0);
