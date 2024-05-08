@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:41:31 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/04 23:48:09 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/08 22:00:09 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,20 @@
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t			i;
+	unsigned char	*buf;
 	unsigned char	*str;
-	unsigned char	*s;
 
 	if (dst == NULL && src == NULL)
 		return (NULL);
 	i = 0;
-	str = (unsigned char *)dst;
-	s = (unsigned char *)src;
+	buf = (unsigned char *)dst;
+	str = (unsigned char *)src;
 	while (i < n)
 	{
-		str[i] = s[i];
+		buf[i] = str[i];
 		i++;
 	}
-	return (str);
+	return (buf);
 }
 
 // int main(void)

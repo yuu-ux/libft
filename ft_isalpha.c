@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:42:03 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 17:09:43 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/08 20:01:14 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,15 @@
 
 int	ft_isalpha(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }
 
 // int	main(void)
 // {
 //     int a;
 //     int b;
-// 	int ft_a = ft_isalpha('');
-// 	a = isalpha('');
+// 	int ft_a = ft_isalpha('a');
+// 	a = isalpha('a');
 // 	int ft_b = ft_isalpha('1');
 // 	b = isalpha('1');
 

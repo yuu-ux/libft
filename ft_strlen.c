@@ -6,32 +6,27 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:40:23 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 14:06:58 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/08 21:02:50 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned long int	ft_strlen(const char *str)
+size_t	ft_strlen(const char *s)
 {
-	int					i;
-	unsigned long int	count;
+	size_t	i;
 
 	i = 0;
-	count = 0;
-	while (str[i] != '\0')
-	{
-		count++;
+	while (s[i] != '\0')
 		i++;
-	}
-	return (count);
+	return (i);
 }
 
-// int main(void)
+// int	main(void)
 // {
-//     char a[] = "hello world";
-//     printf("%lu\n", strlen(a));
-//     printf("%lu\n", ft_strlen(a));
+// 	char *a = NULL;
+// 	// printf("%lu\n", strlen(a));
+// 	printf("%lu\n", ft_strlen(a));
 
-//     return (0);
+// 	return (0);
 // }

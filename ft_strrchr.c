@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 19:38:18 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 23:03:06 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/08 21:52:02 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,32 +14,24 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t	len;
+	int	len;
 
 	len = ft_strlen(s);
-	while (len > 0)
+	while (len >= 0)
 	{
 		if (s[len] == (char)c)
 			return ((char *)&(s[len]));
 		len--;
 	}
-	if (s[0] == (char)c)
-		return ((char *)&(s[0]));
 	return (NULL);
 }
 
 // int	main(void)
 // {
 // 	const char *str = "hello";
-// 	int c = 1;
-// 	char *result = ft_strrchr(str, c);
+// 	int c = 'z';
 
-// 	if (result != NULL)
-// 	{
-// 		printf("%d\n", strrchr(str, c));
-// 		printf("%d\n", ft_strrchr(str, c));
-// 	} else {
-// 		printf("null");
-// 	}
+// 	printf("%s\n", strrchr(str, c));
+// 	printf("%s\n", ft_strrchr(str, c));
 // 	return (0);
 // }

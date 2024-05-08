@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:41:46 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 14:06:21 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/08 20:28:28 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,20 @@
 
 int	ft_isdigit(int c)
 {
-	if ((c >= '0' && c <= '9'))
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return ((c >= '0' && c <= '9'));
 }
-// // 数値であれば１を返す
-// // 数値以外であれば0を返す
-// int main(void)
+
+// int	main(void)
 // {
-//     int ft_a = ' ';
-//     int a = ' ';
-//     int ft_b = ' ';
-//     int b = ' ';
+// 	int ft_a = '1';
+// 	int a = '1';
+// 	int ft_b = 0;
+// 	int b = 0;
 
-//     printf("%d\n", ft_isdigit(ft_a));
-//     printf("%d\n", isdigit(a));
-//     printf("%d\n", ft_isdigit(ft_b));
-//     printf("%d\n", isdigit(b));
+// 	printf("%d\n", ft_isdigit(ft_a));
+// 	printf("%d\n", isdigit(a));
+// 	printf("%d\n", ft_isdigit(ft_b));
+// 	printf("%d\n", isdigit(b));
 
-//     return (0);
+// 	return (0);
 // }

@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:41:41 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 14:35:41 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/08 20:38:04 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,7 @@
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 126)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (c >= ' ' && c <= '~');
 }
 
 // int main(void)

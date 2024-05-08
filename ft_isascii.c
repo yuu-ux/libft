@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:41:58 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 14:06:25 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/08 20:39:46 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,7 @@
 
 int	ft_isascii(int c)
 {
-	if (c >= 0 && c <= 127)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (c >= 0 && c <= 127);
 }
 
 // int main(void)
