@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 17:52:31 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 01:04:32 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/09 19:07:52 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (0);
 	slen = ft_strlen(s);
 	if (slen < len)
-	{
 		flen = slen;
-	}
 	else
-	{
 		flen = len;
-	}
 	while ((i < start) && (s[i] != '\0'))
 		i++;
 	buf = (char *)malloc((flen + 1) * sizeof(char));
