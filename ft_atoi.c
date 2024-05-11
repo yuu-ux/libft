@@ -6,13 +6,13 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:38:21 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/06 01:15:14 by yehara           ###   ########.fr       */
+/*   Updated: 2024/05/11 21:40:51 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ascii_to_int(const char *str, int flag)
+static int	ascii_to_int(const char *str, int flag)
 {
 	unsigned long	result;
 
