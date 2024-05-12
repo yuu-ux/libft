@@ -6,7 +6,7 @@
 #    By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/23 13:31:55 by yehara            #+#    #+#              #
-#    Updated: 2024/05/07 20:47:50 by yehara           ###   ########.fr        #
+#    Updated: 2024/05/12 15:56:20 by yehara           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,7 @@ $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 bonus:
-	$(MAKE) all BFLAGS=1
+	@$(MAKE) all BFLAGS=1
 	
 clean:
 	$(RM) $(SRCS:.c=.o) $(SRCSB:.c=.o)
