@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:38:43 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/08 21:15:37 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 22:00:01 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
-// int	main(void)
-// {
-// 	int c;
-// 	int d;
-// 	c = toupper('a');
-// 	d = ft_toupper('a');
-// 	printf("%c\n", c);
-// 	printf("%c\n", d);
-// }

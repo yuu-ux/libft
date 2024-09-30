@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:40:23 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/08 21:02:50 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 21:59:28 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-// int	main(void)
-// {
-// 	char *a = NULL;
-// 	// printf("%lu\n", strlen(a));
-// 	printf("%lu\n", ft_strlen(a));
-
-// 	return (0);
-// }

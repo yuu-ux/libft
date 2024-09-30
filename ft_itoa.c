@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:41:41 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 00:39:43 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 22:01:48 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,27 +104,3 @@ char	*ft_itoa(int n)
 	result = int_to_str(result, digits_counts, flag, n);
 	return (result);
 }
-
-// int main(void)
-// {
-// int n;
-// n = -18729;
-// printf("%s\n", ft_itoa(n));
-// /* 1 */ printf("%s\n", ft_itoa(0)); // 0
-// /* 2 */ printf("%s\n", ft_itoa(-0)); // 0
-// /* 3 */ printf("%s\n", ft_itoa(+0)); // 0
-// /* 14. INT_MIN */ printf("%s\n", ft_itoa(-2147483648)); //"-2147483648"
-// /* 4 */ printf(ft_itoa(1),"1");
-// /* 5 */ printf(ft_itoa(-1),"-1");
-// /* 6 */ printf(ft_itoa(+1),"1");
-// /* 7 */ printf(ft_itoa(7),"7");
-// /* 8 */ printf(ft_itoa(-7),"-7");
-// /* 9 */ printf(ft_itoa(+7),"7");
-// /* 10 */ printf(ft_itoa(42), "42");
-// /* 11 */ printf(ft_itoa(-42), "-42");
-// /* 12 */ printf(ft_itoa(+42), "42");
-// /* 13. INT_MAX */ printf(ft_itoa(2147483647),"2147483647");
-// /* 15. INT_MAX - 1 */ printf(ft_itoa(2147483646), "2147483646");
-// /* 16. INT_MIN + 1 */ printf(ft_itoa(-2147483647), "-2147483647");
-//     return (0);
-// }

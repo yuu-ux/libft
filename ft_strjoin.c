@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 22:28:58 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 01:07:00 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 21:59:08 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(buf, (char *)s2, total_len + 1);
 	return (buf);
 }
-
-// int main(void)
-// {
-// 	/* 1 */ printf("1：%s\n", ft_strjoin("hello", "world")); // "helloworld"
-// 	/* 2 */ printf("2：%s\n", ft_strjoin("", "world")); // "world"
-// 	/* 3 */ printf("3：%s\n", ft_strjoin("hello", "")); // "hello"
-// 	/* 4 */ printf("4：%s\n", ft_strjoin("", "")); // ""
-// 	return 0;
-// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:40:45 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/28 19:52:25 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 21:59:20 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		dst[i] = '\0';
 	return (count);
 }
-
-// int	main(void)
-// {
-// 	char *dst = strdup("hello");
-// 	char *ft_dst = strdup("hello");
-// 	char *str = "world";
-
-// 	printf("before: %s\n", dst);
-// 	printf("ft_before: %s\n", ft_dst);
-// 	printf("%lu\n", strlcpy(dst, str, 5));
-// 	printf("%lu\n", ft_strlcpy(ft_dst, str, 5));
-// 	printf("after: %s\n", dst);
-// 	printf("ft_after: %s\n", ft_dst);
-// 	return (0);
-// }

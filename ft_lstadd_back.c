@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 22:07:16 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/04 00:05:50 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 22:01:51 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	else
 		*lst = new;
 }
-
-// int	main(void)
-// {
-// 	t_list	*lst;
-// 	t_list	*new_node;
-//     t_list *lst_next;
-
-// 	lst = ft_lstnew("Hanako");
-// 	new_node = ft_lstnew("Nanako");
-// 	printf("%s\n", lst->content);
-// 	ft_lstadd_back(&lst, new_node);
-// 	lst_next = lst->next;
-// 	printf("%s\n", lst_next->content);
-// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 19:56:49 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 20:13:21 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 21:58:45 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,33 +110,3 @@ char	**ft_split(char const *s, char c)
 	}
 	return (buf);
 }
-// int	main(void)
-// {
-// char *str;
-// char delimiter;
-// char **result;
-// int i;
-
-// i = 0;
-// str = "a,b,c";
-// delimiter = ',';
-
-// result = ft_split(str, delimiter);
-// while (result[i] != NULL)
-// {
-// 	printf("%s", result[i]);
-// 	i++;
-// }
-// printf("%s\n", ft_split(str, delimiter));
-// char *expected[] = {"hello","world","42","tokyo", NULL};
-// /* 1 ~ 5 */ printf("%s\n", ft_split("hello,world,42,tokyo", ','));
-// /* 6 ~ 10 */ printf(ft_split("hello world 42 tokyo", ' '));
-// /* 11 ~ 15 */ printf(ft_split(",,,hello,,,world,,,42,,,tokyo,,,,", ','));
-
-// char *expected2[] = {"hello,world,42,tokyo", NULL};
-// /* 16 ~ 17 */ printf(ft_split("hello,world,42,tokyo", ' '));
-// /* 18 ~ 19 */ printf(ft_split("hello,world,42,tokyo", '{'));
-
-// char *expected3[] = {NULL};
-// /* 20 */ printf(ft_split("", ','));
-// }

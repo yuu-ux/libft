@@ -3,24 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 20:49:39 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 00:40:31 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 21:59:33 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// char	to_upper(unsigned int index, char c)
-// {
-// 	(void)index;
-// 	if (c >= 'a' && c <= 'z')
-// 	{
-// 		return (c - 32);
-// 	}
-// 	return (c);
-// }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -43,16 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	buf[i] = '\0';
 	return (buf);
 }
-
-// int main(void)
-// {
-// 	char *s;
-//     s = "abcde";
-//     // char (*f)(unsigned int, char);
-//     // f = increment_char;
-//     printf("%s\n", s);
-//     printf("%p\n", s);
-// 	s = ft_strmapi(s, to_upper);
-//     printf("%s\n", s);
-//     printf("%p\n", s);
-// }

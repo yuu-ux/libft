@@ -3,31 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 04:14:29 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 21:17:09 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 21:58:23 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// void *str_to_bigstr(void *content)
-// {
-//     char *str = (char *)content;
-//     while (*str)
-//     {
-//         if (*str >= 'a' && *str <= 'z')
-//             *str -= 32;
-//         str++;
-//     }
-//     return (str);
-// }
-
-// void	del_content(void *content)
-// {
-// 	free(content);
-// }
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
@@ -48,13 +31,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
-// int	main(void)
-// {
-//     t_list *lst;
-
-//     lst = ft_lstnew("TAROU");
-//     printf("%s\n", lst->content);
-//     ft_lstmap(lst, str_to_bigstr, del_content);
-//     printf("%s\n", lst->content);
-// 	return (0);
-// }

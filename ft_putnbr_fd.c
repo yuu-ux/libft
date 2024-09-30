@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 20:23:57 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/03 16:17:05 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 22:02:45 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,14 +38,3 @@ void	ft_putnbr_fd(int n, int fd)
 		write(fd, &str, 1);
 	}
 }
-
-// int	main(void)
-// {
-// 	int	fd;
-// 	int n;
-
-//     n = INT_MIN + 1;
-// 	fd = open("file.txt", O_RDWR | O_CREAT, S_IREAD | S_IWRITE);
-// 	ft_putnbr_fd(n, fd);
-// 	close(fd);
-// }

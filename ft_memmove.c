@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:41:16 by yehara            #+#    #+#             */
-/*   Updated: 2024/04/23 14:06:51 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 22:02:27 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,20 +38,3 @@ void	*ft_memmove(void *dest, const void *src, size_t count)
 	}
 	return (dst);
 }
-
-// int	main(void)
-// {
-// 	char str[] = "hello World";
-// 	char ft_str[] = "hello World";
-// 	printf("Before memmove: %s\n", str);
-// 	printf("Before ft_memmove: %s\n", ft_str);
-
-// 	// "hello" の "llo" の部分を先頭にコピー
-// 	memmove(str, str + 6, 5);
-// 	ft_memmove(ft_str, ft_str + 6, 5);
-
-// 	printf("After memmove:  %s\n", str);
-// 	printf("After ft_memmove:  %s\n", ft_str);
-
-// 	return (0);
-// }

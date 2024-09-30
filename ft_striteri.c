@@ -3,22 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 19:28:22 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/01 20:24:29 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 21:59:03 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// void	t_tolower(unsigned int i, char *str)
-// {
-// 	if (str[i] >= 'A' && str[i] <= 'Z')
-// 	{
-// 		str[i] += 32;
-// 	}
-// }
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
@@ -33,15 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-
-// int main(void)
-// {
-// 	char *str;
-//     str = ft_strdup("Hello");
-//     printf("%s\n", str);
-//     printf("%p\n", str);
-//     ft_striteri(str, t_tolower);
-//     printf("%s\n", str);
-//     printf("%p\n", str);
-//     free(str);
-// }

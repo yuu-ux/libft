@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:42:08 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/08 20:28:41 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 22:01:32 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,3 @@ int	ft_isalnum(int c)
 {
 	return (ft_isalpha(c) || ft_isdigit(c));
 }
-// int main(void)
-// {
-//     int a;
-//     int b;
-
-//     a = 0;
-//     b = '0';
-
-//     printf("%d\n", ft_isalnum(a));
-//     printf("%d\n", isalnum(a));
-//     printf("%d\n", ft_isalnum(b));
-//     printf("%d\n", isalnum(b));
-
-//     return (0);
-// }

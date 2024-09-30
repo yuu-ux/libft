@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 19:38:18 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/08 22:00:36 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 21:58:54 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return ((char *)&s[i]);
 }
-
-// int	main(void)
-// {
-// 	const char *str = "Hello World";
-// 	int c = 'o';
-
-// 	printf("%s\n", strchr(str, c));
-// 	printf("%s\n", ft_strchr(str, c));
-// 	return (0);
-// }

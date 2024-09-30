@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:41:04 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/08 21:04:27 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 22:02:30 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,19 +26,3 @@ void	*ft_memset(void *s, int c, size_t len)
 	}
 	return (str);
 }
-
-// int	main(void)
-// {
-// 	char	buffer[] = "This is a test of the memset function";
-// 	char	ft_b[] = "This is a test of the memset function";
-
-// 	printf("Before: %s\n", buffer);
-// 	printf("Before: %s\n", ft_b);
-// 	memset(buffer, 'a', 4);
-// 	for (int i = 0; i < 50; i++)
-// 		printf("-");
-// 	printf("\n");
-// 	ft_memset(ft_b, 'a', 4);
-// 	printf("After:  %s\n", buffer);
-// 	printf("After:  %s\n", ft_b);
-// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:38:21 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/11 21:40:51 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 22:01:16 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,11 +52,3 @@ int	ft_atoi(const char *str)
 	result = ascii_to_int(str, flag);
 	return (result);
 }
-
-// int	main(void)
-// {
-// 	char *str = "-9223372036854775807";
-// 	printf("%d\n", atoi(str));
-// 	printf("%d\n", ft_atoi(str));
-// 	return (0);
-// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 19:38:18 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/08 21:52:02 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 21:59:46 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// 	const char *str = "hello";
-// 	int c = 'z';
-
-// 	printf("%s\n", strrchr(str, c));
-// 	printf("%s\n", ft_strrchr(str, c));
-// 	return (0);
-// }

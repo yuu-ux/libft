@@ -3,19 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 01:48:11 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/04 04:09:55 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 21:58:09 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// void	deleate_content(void *content)
-// {
-// 	free(content);
-// }
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
@@ -31,18 +26,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	lst = NULL;
 }
-
-// int	main(void)
-// {
-// 	t_list *lst;
-// 	lst = ft_lstnew("content");
-// 	printf("%p\n", lst);
-// 	ft_lstclear(&lst, del_content);
-//     printf("%p\n", lst);
-// 	return (0);
-// }
-
-// __attribute__((destructor))
-// static void destructor() {
-//     system("leaks -q a.out");
-// }

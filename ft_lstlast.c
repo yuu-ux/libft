@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 21:41:49 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 16:51:43 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 21:57:28 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,16 @@ t_list	*ft_lstlast(t_list *lst)
 	return (lst);
 }
 
-// int main(void)
-// {
-//     t_list *lst;
-//     t_list *node;
-//     t_list *last_node;
 
-//     lst = ft_lstnew("Hanako");
-//     node = ft_lstnew("Tarou");
 
-//     ft_lstadd_front(&lst, node);
-// 	last_node = ft_lstlast(lst);
-//     printf("%s\n", last_node->content);
-//     return (0);
-// }
+
+
+
+
+
+
+
+
+
+
+

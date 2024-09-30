@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 19:50:30 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/05 19:29:51 by yehara           ###   ########.fr       */
+/*   Updated: 2024/09/30 21:59:14 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,17 +36,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[ds_co + i] = '\0';
 	return (ds_co + sr_co);
 }
-// int main(void)
-// {
-// 	// char dest[20] = "abcde";
-// 	// char src1[] = NULL;
-// 	char src2[] ="abc";
-
-// 	size_t result1;
-// 	result1 = strlcat(src2, NULL, 0);
-// 	printf("%lu\n", result1);
-// 	size_t result2;
-// 	result2 = ft_strlcat(src2, NULL, 0);
-// 	printf("%lu\n", result2);
-// 	return (0);
-// }
