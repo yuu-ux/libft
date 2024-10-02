@@ -6,7 +6,7 @@
 #    By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/23 13:31:55 by yehara            #+#    #+#              #
-#    Updated: 2024/10/02 18:59:02 by ebarayuug        ###   ########.fr        #
+#    Updated: 2024/10/02 19:49:21 by ebarayuug        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c get_next_line.c
 SRCSB = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 NAME = libft.a
+PRINTF = ./ft_printf/printf.a
 CC = cc
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
@@ -34,6 +35,8 @@ OBJS = $(SRURCES:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
+	make -C ft_printf
+	cp $(PRINTF) $@
 	$(AR) rcs $@ $^
 
 %.o: %.c
@@ -43,9 +46,11 @@ bonus:
 	@$(MAKE) all BFLAGS=1
 
 clean:
+	make -C ft_printf clean
 	$(RM) $(SRCS:.c=.o) $(SRCSB:.c=.o)
 
 fclean: clean
+	make -C ft_printf fclean
 	$(RM) $(NAME)
 
 re: fclean all

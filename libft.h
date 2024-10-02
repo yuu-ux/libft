@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ebarayuuga <ebarayuuga@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 13:48:46 by yehara            #+#    #+#             */
-/*   Updated: 2024/10/02 18:59:52 by ebarayuug        ###   ########.fr       */
+/*   Updated: 2024/10/02 19:51:44 by ebarayuuga       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,6 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 int					ft_getc(int fd);
 int					ft_putc(t_string *str, char c);
 char				*get_next_line(int fd);
+int					ft_printf(const char *str, ...);
 
 #endif
