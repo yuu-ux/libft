@@ -6,7 +6,7 @@
 /*   By: ebarayuuga <ebarayuuga@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 13:48:46 by yehara            #+#    #+#             */
-/*   Updated: 2024/10/02 19:51:44 by ebarayuuga       ###   ########.fr       */
+/*   Updated: 2024/10/02 20:06:36 by ebarayuuga       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,5 +90,6 @@ int					ft_getc(int fd);
 int					ft_putc(t_string *str, char c);
 char				*get_next_line(int fd);
 int					ft_printf(const char *str, ...);
+char				*ft_chomp(char *str);
 
 #endif
