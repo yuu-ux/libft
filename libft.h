@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 13:48:46 by yehara            #+#    #+#             */
-/*   Updated: 2024/09/30 22:00:31 by yehara           ###   ########.fr       */
+/*   Updated: 2024/10/02 18:59:52 by ebarayuug        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,20 @@
 # include <sys/stat.h>
 # include <sys/types.h>
 # include <unistd.h>
+# define BUFFER_SIZE 42
 
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
+
+typedef struct s_string
+{
+	char			*str;
+	size_t			len;
+	size_t			capa;
+}					t_string;
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
@@ -78,5 +86,8 @@ void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
+int					ft_getc(int fd);
+int					ft_putc(t_string *str, char c);
+char				*get_next_line(int fd);
 
 #endif
