@@ -91,5 +91,6 @@ int					ft_putc(t_string *str, char c);
 char				*get_next_line(int fd);
 int					ft_printf(const char *str, ...);
 char				*ft_chomp(char *str);
+char				*ft_chop(char *str);
 
 #endif
