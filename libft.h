@@ -92,5 +92,7 @@ char				*get_next_line(int fd);
 int					ft_printf(const char *str, ...);
 char				*ft_chomp(char *str);
 char				*ft_chop(char *str);
+void				*ft_xmalloc(size_t size);
+void				*ft_realloc(void *buf, size_t size);
 
 #endif
