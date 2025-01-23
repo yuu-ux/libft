@@ -6,7 +6,7 @@
 /*   By: ebarayuuga <ebarayuuga@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 13:48:46 by yehara            #+#    #+#             */
-/*   Updated: 2024/10/02 20:06:36 by ebarayuuga       ###   ########.fr       */
+/*   Updated: 2025/01/23 21:33:48 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,5 +94,6 @@ char				*ft_chomp(char *str);
 char				*ft_chop(char *str);
 void				*ft_xmalloc(size_t size);
 void				*ft_realloc(void *buf, size_t size);
+char	            *free_strjoin(char *s1, char *s2);
 
 #endif
