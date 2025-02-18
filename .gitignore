@@ -6,3 +6,4 @@ test.sh
 libft.h.gch
 *.o
 ~/
+*.a
