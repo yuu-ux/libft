@@ -6,6 +6,6 @@ test.sh
 libft.h.gch
 
 
-objs
+objs/
 *.a
 *.o
