@@ -19,6 +19,7 @@ char	*ft_chop(char *str)
 	if (!str)
 		return (NULL);
 	len = ft_strlen(str);
-    str[len - 1] = '\0';
+	if (len)
+		str[len - 1] = '\0';
 	return (str);
 }
