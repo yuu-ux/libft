@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hana/hmori <sagiri.mori@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 02:07:49 by yehara            #+#    #+#             */
-/*   Updated: 2025/02/26 02:08:02 by yehara           ###   ########.fr       */
+/*   Updated: 2025/03/11 21:40:57 by hana/hmori       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isspace(int c)
+int	ft_isspace(int c)
 {
-    return ('\t' == c || '\n' == c || '\v' == c
-            || '\f' == c || '\r' == c || ' ' == c);
+	return ('\t' == c || '\n' == c || '\v' == c
+		|| '\f' == c || '\r' == c || ' ' == c);
 }

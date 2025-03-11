@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   free_strjoin.c                                       :+:      :+:    :+:   */
+/*   free_strjoin.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yehara <yehara@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hana/hmori <sagiri.mori@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 22:28:58 by yehara            #+#    #+#             */
-/*   Updated: 2025/01/23 21:33:18 by yehara           ###   ########.fr       */
+/*   Updated: 2025/03/11 21:44:08 by hana/hmori       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*free_strjoin(char *s1, char *s2)
 		return (NULL);
 	ft_strlcpy(buf, s1, lens1 + 1);
 	ft_strlcat(buf, (char *)s2, total_len + 1);
-    free(s1);
-    free(s2);
+	free(s1);
+	free(s2);
 	return (buf);
 }

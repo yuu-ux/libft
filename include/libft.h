@@ -6,13 +6,14 @@
 /*   By: hana/hmori <sagiri.mori@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 13:48:46 by yehara            #+#    #+#             */
-/*   Updated: 2025/02/26 16:31:29 by hana/hmori       ###   ########.fr       */
+/*   Updated: 2025/03/11 21:47:11 by hana/hmori       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <errno.h>
+
+# include <unistd.h>
 # include <fcntl.h>
 # include <limits.h>
 # include <stddef.h>
@@ -21,9 +22,10 @@
 # include <stdlib.h>
 # include <string.h>
 # include <strings.h>
+# include <errno.h>
 # include <sys/stat.h>
 # include <sys/types.h>
-# include <unistd.h>
+
 # define BUFFER_SIZE 42
 
 typedef struct s_list
@@ -94,7 +96,7 @@ char				*ft_chomp(char *str);
 char				*ft_chop(char *str);
 void				*ft_xmalloc(size_t size);
 void				*ft_realloc(void *buf, size_t size);
-char	            *free_strjoin(char *s1, char *s2);
+char				*free_strjoin(char *s1, char *s2);
 long				ft_atol(char *str);
 int					ft_isspace(int c);
 
