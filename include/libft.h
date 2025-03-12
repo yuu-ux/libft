@@ -6,7 +6,7 @@
 /*   By: hana/hmori <sagiri.mori@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 13:48:46 by yehara            #+#    #+#             */
-/*   Updated: 2025/03/11 21:47:11 by hana/hmori       ###   ########.fr       */
+/*   Updated: 2025/03/12 11:31:33 by hana/hmori       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,5 +99,6 @@ void				*ft_realloc(void *buf, size_t size);
 char				*free_strjoin(char *s1, char *s2);
 long				ft_atol(char *str);
 int					ft_isspace(int c);
+int					ft_isvalue(char *str);
 
 #endif
