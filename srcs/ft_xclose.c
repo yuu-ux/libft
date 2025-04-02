@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	xclose(int fd)
+void	ft_xclose(int fd)
 {
 	if (close(fd) == -1)
 	{
