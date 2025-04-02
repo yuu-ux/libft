@@ -13,7 +13,7 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <unistd.h>
+# include <errno.h>
 # include <fcntl.h>
 # include <limits.h>
 # include <stddef.h>
@@ -22,9 +22,9 @@
 # include <stdlib.h>
 # include <string.h>
 # include <strings.h>
-# include <errno.h>
 # include <sys/stat.h>
 # include <sys/types.h>
+# include <unistd.h>
 
 # define BUFFER_SIZE 42
 
@@ -100,5 +100,6 @@ char				*free_strjoin(char *s1, char *s2);
 long				ft_atol(char *str);
 int					ft_isspace(int c);
 int					ft_isvalue(char *str);
+int					ft_xopen(const char *path, int flags);
 
 #endif
