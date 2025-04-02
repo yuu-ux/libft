@@ -102,5 +102,6 @@ int					ft_isspace(int c);
 int					ft_isvalue(char *str);
 int					ft_xopen(const char *path, int flags);
 void				xclose(int fd);
+double				ft_atof(char *s);
 
 #endif
