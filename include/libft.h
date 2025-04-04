@@ -6,7 +6,7 @@
 /*   By: hana/hmori <sagiri.mori@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 13:48:46 by yehara            #+#    #+#             */
-/*   Updated: 2025/03/12 11:31:33 by hana/hmori       ###   ########.fr       */
+/*   Updated: 2025/04/04 21:30:21 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,5 +103,6 @@ int					ft_isvalue(char *str);
 int					ft_xopen(const char *path, int flags);
 void				ft_xclose(int fd);
 double				ft_atof(char *s);
+char				**ft_xsplit(char const *s, char c);
 
 #endif
